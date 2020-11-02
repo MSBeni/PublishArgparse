@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+CommandLine_Pub.egg-info/PKG-INFO
+CommandLine_Pub.egg-info/SOURCES.txt
+CommandLine_Pub.egg-info/dependency_links.txt
+CommandLine_Pub.egg-info/requires.txt
+CommandLine_Pub.egg-info/top_level.txt
+GetTweet/__init__.py
+GetTweet/__main__.py
+GetTweet/ManagingTweets/Adding_Simple.py
+GetTweet/ManagingTweets/__init__.py
