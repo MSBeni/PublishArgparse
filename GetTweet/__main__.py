@@ -1,9 +1,15 @@
 import argparse
-import sys, os
+# import sys, os
+import sys
+import os
+
+# PACKAGE_PARENT = '..'
+# SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+# sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
-from ManagingTweets.Adding_Simple import AddSimple
-
+# from .ManagingTweets.Adding_Simple import AddSimple
+from .ManagingTweets.Adding_Simple import AddSimple
 
 def create_parser():
     parser = argparse.ArgumentParser()
