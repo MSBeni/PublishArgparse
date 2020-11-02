@@ -27,7 +27,8 @@ def main(argv=None):
 
         # Parser check
         if counttill100:
-            print(AddingSimple.print_till100())
+            print(AddingSimple().print_till100())
+            # counttill100fun()
 
     except KeyboardInterrupt:
         print('\nGood Bye.')

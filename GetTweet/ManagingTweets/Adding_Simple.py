@@ -2,7 +2,14 @@ class AddingSimple:
     def __init__(self):
         pass
 
-    def print_till_100(self):
+    def print_1(self, args):
+        if args:
+            for i in range(1, 101):
+                return i
+
+    def print_till100(self):
+        lst = []
         for i in range(1, 101):
-            return i
+            lst.append(i)
+        return lst
 
