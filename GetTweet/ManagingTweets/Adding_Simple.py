@@ -1,4 +1,4 @@
-class AddingSimple:
+class AddSimple:
     def __init__(self):
         pass
 

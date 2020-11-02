@@ -1,7 +1,8 @@
 import argparse
-import sys
+import sys, os
 
-from ManagingTweets.Adding_Simple import AddingSimple
+sys.path.insert(1, os.path.join(sys.path[0], '..'))
+from ManagingTweets.Adding_Simple import AddSimple
 
 
 def create_parser():
@@ -27,14 +28,13 @@ def main(argv=None):
 
         # Parser check
         if counttill100:
-            print(AddingSimple().print_till100())
+            print(AddSimple().print_till100())
             # counttill100fun()
 
     except KeyboardInterrupt:
         print('\nGood Bye.')
 
     return 0
-
 
 def counttill100fun():
     for i in range(1, 101):

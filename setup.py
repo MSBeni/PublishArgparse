@@ -19,7 +19,7 @@ classifiers = [
           ]
 
 
-setup(name='CommandLine_Pub',
+setup(name='GetTweet',
       version='0.0.1',
       description='Test to Publish the Command Line',
       py_modules=["GetTweet"],
