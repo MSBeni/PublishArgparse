@@ -11,6 +11,7 @@ GetTweet/test_GetTweet.py
 GetTweet.egg-info/PKG-INFO
 GetTweet.egg-info/SOURCES.txt
 GetTweet.egg-info/dependency_links.txt
+GetTweet.egg-info/entry_points.txt
 GetTweet.egg-info/requires.txt
 GetTweet.egg-info/top_level.txt
 GetTweet/ManagingTweets/Adding_Simple.py
