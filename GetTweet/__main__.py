@@ -14,6 +14,8 @@ from .ManagingTweets.Adding_Simple import AddSimple
 def create_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--counttill100', required=False, action='store_true', help='Print count till 100')
+    parser.add_argument('--print1', required=False, action='store_true', help='Print count till 100')
+    parser.add_argument('--name', type=str, default='Farnoush', help='Print Name')
 
     return parser
 
@@ -31,11 +33,16 @@ def main(argv=None):
 
         # Arguments initialization
         counttill100 = args.counttill100
+        name = args.name
+        print1 = args.print1
 
         # Parser check
         if counttill100:
             print(AddSimple().print_till100())
             # counttill100fun()
+
+        if print1:
+            print(AddSimple().sayhello(name))
 
     except KeyboardInterrupt:
         print('\nGood Bye.')

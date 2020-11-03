@@ -2,10 +2,9 @@ class AddSimple:
     def __init__(self):
         pass
 
-    def print_1(self, args):
-        if args:
-            for i in range(1, 101):
-                return i
+    def sayhello(self, name):
+        return f"Hello to you, {name}"
+        # return name
 
     def print_till100(self):
         lst = []
