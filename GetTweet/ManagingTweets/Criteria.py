@@ -7,13 +7,13 @@ class ArgsCriteria:
         self.within = "15mi"
         self.emoji = "ignore"
 
-    def setcounttill100(self, ct100):
+    def setcounttill100(self, counttill100):
         """Set the permission to count to 100
         Parameters
         ----------
         ct100 : True or false
         """
-        self.ct100 = ct100
+        self.counttill100 = counttill100
         return self
 
     def setprint(self, print1):

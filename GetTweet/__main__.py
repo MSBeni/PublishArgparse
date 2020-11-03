@@ -33,9 +33,13 @@ def main(argv=None):
         args = parser.parse_args(argv[1:])
 
         # Arguments initialization
-        counttill100 = args.counttill100
-        name = args.name
-        print1 = args.print1
+        # counttill100 = args.counttill100
+        # name = args.name
+        # print1 = args.print1
+        #
+        counttill100 = args.ArgsCriteria.counttill100
+        name = args.ArgsCriteria.name
+        print1 = args.ArgsCriteria.print1
 
         # Parser check
         if counttill100:
