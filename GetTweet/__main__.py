@@ -10,6 +10,7 @@ import os
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 # from .ManagingTweets.Adding_Simple import AddSimple
 from .ManagingTweets.Adding_Simple import AddSimple
+from .ManagingTweets.Criteria import ArgsCriteria
 
 def create_parser():
     parser = argparse.ArgumentParser()
