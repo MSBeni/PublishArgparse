@@ -1,3 +1,0 @@
-[console_scripts]
-GetTweet = GetTweet.__main__:main
-
