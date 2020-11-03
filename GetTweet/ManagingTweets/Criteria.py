@@ -16,7 +16,7 @@ class ArgsCriteria:
         self.ct100 = ct100
         return self
 
-    def setExcludeWords(self, print1):
+    def setprint(self, print1):
         """Set the permission to print name
         Parameters
         ----------
@@ -25,7 +25,7 @@ class ArgsCriteria:
         self.print1 = print1
         return self
 
-    def setSince(self, name):
+    def setname(self, name):
         """Set the name of the guy you want to say hello
         Parameters
         ----------
