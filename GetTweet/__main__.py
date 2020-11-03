@@ -33,13 +33,18 @@ def main(argv=None):
         args = parser.parse_args(argv[1:])
 
         # Arguments initialization
-        # counttill100 = args.counttill100
-        # name = args.name
-        # print1 = args.print1
+        counttill100 = args.counttill100
+        name = args.name
+        print1 = args.print1
+
+        ArgsCriteria().setcounttill100(counttill100)
+        ArgsCriteria().setname(name)
+        ArgsCriteria().setprint(print1)
+
         #
-        counttill100 = args.ArgsCriteria.counttill100
-        name = args.ArgsCriteria.name
-        print1 = args.ArgsCriteria.print1
+        # counttill100 = ArgsCriteria.counttill100
+        # name = ArgsCriteria.name
+        # print1 = ArgsCriteria.print1
 
         # Parser check
         if counttill100:
@@ -48,6 +53,12 @@ def main(argv=None):
 
         if print1:
             print(AddSimple().sayhello(name))
+
+        if ArgsCriteria().counttill100:
+            print(AddSimple().print_till100())
+
+        if ArgsCriteria().print1:
+            print(AddSimple().sayhello(ArgsCriteria().name))
 
     except KeyboardInterrupt:
         print('\nGood Bye.')

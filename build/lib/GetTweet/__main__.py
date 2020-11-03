@@ -10,6 +10,7 @@ import os
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 # from .ManagingTweets.Adding_Simple import AddSimple
 from .ManagingTweets.Adding_Simple import AddSimple
+from .ManagingTweets.Criteria import ArgsCriteria
 
 def create_parser():
     parser = argparse.ArgumentParser()
@@ -36,6 +37,15 @@ def main(argv=None):
         name = args.name
         print1 = args.print1
 
+        ArgsCriteria().setcounttill100(counttill100)
+        ArgsCriteria().setname(name)
+        ArgsCriteria().setprint(print1)
+
+        #
+        # counttill100 = ArgsCriteria.counttill100
+        # name = ArgsCriteria.name
+        # print1 = ArgsCriteria.print1
+
         # Parser check
         if counttill100:
             print(AddSimple().print_till100())
@@ -43,6 +53,12 @@ def main(argv=None):
 
         if print1:
             print(AddSimple().sayhello(name))
+
+        if ArgsCriteria().counttill100:
+            print(AddSimple().print_till100())
+
+        if ArgsCriteria().print1:
+            print(AddSimple().sayhello(ArgsCriteria().name))
 
     except KeyboardInterrupt:
         print('\nGood Bye.')
