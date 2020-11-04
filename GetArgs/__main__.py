@@ -15,7 +15,7 @@ from .ManagingArgs.Criteria import ArgsCriteria
 def create_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--counttill100', required=False, action='store_true', help='Print count till 100')
-    parser.add_argument('--print1', required=False, action='store_true', help='Let you to Print Hello to sny name')
+    parser.add_argument('--print1', required=False, action='store_true', help='Let you to Print Hello to any name')
     parser.add_argument('--name', type=str, default='Farnoush', help='Print Name')
 
     return parser
