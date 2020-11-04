@@ -37,9 +37,15 @@ def main(argv=None):
         name = args.name
         print1 = args.print1
 
-        ArgsCriteria().setcounttill100(counttill100)
-        ArgsCriteria().setname(name)
-        ArgsCriteria().setprint(print1)
+
+        # Parser check
+        if counttill100:
+            print(AddSimple().print_till100())
+            # counttill100fun()
+
+        if print1:
+            print(AddSimple().sayhello(name))
+
 
     except KeyboardInterrupt:
         print('\nGood Bye.')
