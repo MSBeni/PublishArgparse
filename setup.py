@@ -19,7 +19,7 @@ classifiers = [
           ]
 
 
-setup(name='GetArgs',
+setup(name='SimpleGetArgs',
       version='0.0.1',
       description='Test to Publish the Command Line',
       py_modules=["GetArgs"],
