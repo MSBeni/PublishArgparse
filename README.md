@@ -12,7 +12,7 @@ A Python package for getting list of numbers from 1 to 100 or saying hello to an
 
 - Chef-CLI is available as a python package.
 
-- Open terminal and run ```pip install GetTweet```
+- Open terminal and run ```pip install GetArgs```
 
 - This installs the CLI app.
 
