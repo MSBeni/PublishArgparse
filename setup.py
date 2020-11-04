@@ -19,12 +19,12 @@ classifiers = [
           ]
 
 
-setup(name='GetTweet',
+setup(name='GetArgs',
       version='0.0.1',
       description='Test to Publish the Command Line',
-      py_modules=["GetTweet"],
+      py_modules=["GetArgs"],
       # package_dir={'': 'src'},
-      entry_points={'console_scripts': ['GetTweet = GetTweet.__main__:main']},
+      entry_points={'console_scripts': ['GetArgs = GetArgs.__main__:main']},
       long_description=long_description,
       long_description_content_type="text/markdown",
       author='MSBeni',

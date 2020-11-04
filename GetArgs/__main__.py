@@ -8,9 +8,9 @@ import os
 # sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
-# from .ManagingTweets.Adding_Simple import AddSimple
-from .ManagingTweets.Adding_Simple import AddSimple
-from .ManagingTweets.Criteria import ArgsCriteria
+# from .ManagingArgs.Adding_Simple import AddSimple
+from .ManagingArgs.Adding_Simple import AddSimple
+from .ManagingArgs.Criteria import ArgsCriteria
 
 def create_parser():
     parser = argparse.ArgumentParser()
