@@ -12,7 +12,7 @@ A Python package for getting list of numbers from 1 to 100 or saying hello to an
 
 - Chef-CLI is available as a python package.
 
-- Open terminal and run ```pip install GetArgs```
+- Open terminal and run ```pip install SimpleGetArgs```
 
 - This installs the CLI app.
 
@@ -22,16 +22,16 @@ A Python package for getting list of numbers from 1 to 100 or saying hello to an
 
 ### Example
 
-**To extract Top 20 Richest People**
+**To Print the numbers from 0 to 100**
 
 ```
-richest --current
+GetArgs --counttill100
 ```
 
 **To extract Top 20 Youngest Richest People**
 
 ```
-richest --youngest
+GetArgs --print1 --name "NazGol"
 ```
 
 **Complete option list**
@@ -41,29 +41,13 @@ richest -h
 usage: richest [-h] [--current] [--youngest] [--oldest] [--male] [--female]
 
 optional arguments:
-  -h, --help  show this help message and exit
-  --current   Get richest people currently
-  --youngest  Get youngest richest people
-  --oldest    Get oldest richest people
-  --male      Get richest males
-  --female    Get richest females
+  -h, --help      show this help message and exit
+  --counttill100  Print count till 100
+  --print1        Let you to Print Hello to any name
+  --name NAME     Print Name
 ```
-
-## Feedback
-
-Feel free to send feedback on [Email](mailto:mohitfeuhrer@gmail.com) or [file an issue](https://github.com/mkfeuhrer/richest/issues).
 
 ## Contributors
 
-- [Mohit Khare](https://github.com/mkfeuhrer)
+- [MSBeni](https://github.com/MSBeni)
 
-## Contribute
-
-- Feel free to report issues and bugs.It will be helpful for future launches of application.
-- All Suggestions are welcome.
-- Fork repository and Contribute.
-
-
-## Acknowledgment
-
-Thanks to awesome api - https://forbes400.herokuapp.com/
