@@ -14,7 +14,7 @@ class ArgsCriteria:
         ct100 : True or false
         """
         self.counttill100 = counttill100
-        return self
+        return self.counttill100
 
     def setprint(self, print1):
         """Set the permission to print name
@@ -23,7 +23,7 @@ class ArgsCriteria:
         print1 : True or false
         """
         self.print1 = print1
-        return self
+        return self.print1
 
     def setname(self, name):
         """Set the name of the guy you want to say hello
@@ -32,4 +32,4 @@ class ArgsCriteria:
         name : str,
         """
         self.name = name
-        return self
+        return self.name
